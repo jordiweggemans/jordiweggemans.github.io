@@ -17,8 +17,7 @@ h1 {
 
 #profilepic {
   float : right;
-  margin-left : 20px;
-  margin-top : 20px;
+  margin: 20px;
 }
 
 table tr td {
