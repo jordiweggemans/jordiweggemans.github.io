@@ -29,17 +29,16 @@ li {
   margin: 5px 0 5px 0;
 }
 
-/* Add these styles for hyperlinks */
 a {
   text-decoration: none; /* Remove underline */
-  color: #1E90FF; /* Different type of blue (DodgerBlue) */
+  color: #4169E1; /* RoyalBlue */
 }
 
 a:visited {
-  color: #1E90FF; /* Keep the same blue color after visiting */
+  color: #4169E1; /* Keep the same RoyalBlue color after visiting */
 }
 
 /* Optional: Change color on hover */
 a:hover {
-  color: #104E8B; /* Darker blue on hover */
+  color: #27408B; /* Darker shade for hover effect */
 }
