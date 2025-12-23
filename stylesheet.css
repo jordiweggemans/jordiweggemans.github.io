@@ -259,3 +259,18 @@ li{ margin: 7px 0; }
 @media (max-width: 900px){
   .heroimg img{ height: 200px; }
 }
+
+/* Hero image */
+.heroimg{
+  margin: 14px 0 6px 0;
+}
+.heroimg a{
+  display: block;
+}
+.heroimg img{
+  width: 100%;
+  height: auto;            /* keep aspect ratio */
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  display: block;
+}
