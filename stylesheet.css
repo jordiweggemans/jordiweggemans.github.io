@@ -46,11 +46,22 @@ body.page-home.page-light{
   --card-bg-hover: rgba(11,12,16,.05);
   --card-border-hover: rgba(11,12,16,.18);
 }
-/* Music stays dark */
-body.page-music{
-  --accent: #ff63d1;
-}
 
+
+/* Music = light mode with magenta accent */
+body.page-music{
+  --bg: #f5f6f8;
+  --panel: #ffffff;
+  --text: #0b0c10;
+  --muted: #4c5563;
+  --border: rgba(11,12,16,.14);
+  --accent: #ff63d1;
+  --shadow: 0 10px 30px rgba(0,0,0,.10);
+
+  --card-bg: rgba(11,12,16,.02);
+  --card-bg-hover: rgba(11,12,16,.05);
+  --card-border-hover: rgba(11,12,16,.18);
+}
 /* -------- Base -------- */
 *{ box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
@@ -214,6 +225,35 @@ body.page-home.page-light .card--dark:hover{
   background: rgba(15,17,23,.92);
   border-color: rgba(255,255,255,.20);
 }
+
+
+
+/* Hero image */
+.heroimg{
+  margin: 14px 0 6px 0;
+}
+.heroimg img{
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  display: block;
+}
+body.page-music .heroimg img{
+  box-shadow: 0 10px 30px rgba(0,0,0,.10);
+}
+
+/* Subtle section panels */
+.panel{
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(11,12,16,.03);
+}
+body.page-home .panel, body.page-research .panel{ background: rgba(11,12,16,.02); }
+body.page-music .panel{ background: rgba(11,12,16,.035); }
 
 /* -------- Lists -------- */
 ul{ padding-left: 18px; }
