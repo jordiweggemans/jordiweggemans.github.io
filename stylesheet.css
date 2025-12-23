@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
 
 /* -------- Theme tokens -------- */
 :root{
@@ -30,6 +30,22 @@ body.page-research{
   --card-border-hover: rgba(11,12,16,.18);
 }
 
+
+
+/* Home = light mode (same as research) */
+body.page-home.page-light{
+  --bg: #f5f6f8;
+  --panel: #ffffff;
+  --text: #0b0c10;
+  --muted: #4c5563;
+  --border: rgba(11,12,16,.14);
+  --accent: #2f5bff;
+  --shadow: 0 10px 30px rgba(0,0,0,.10);
+
+  --card-bg: rgba(11,12,16,.02);
+  --card-bg-hover: rgba(11,12,16,.05);
+  --card-border-hover: rgba(11,12,16,.18);
+}
 /* Music stays dark */
 body.page-music{
   --accent: #ff63d1;
@@ -42,7 +58,7 @@ html, body { margin: 0; padding: 0; }
 body{
   background: var(--bg);
   color: var(--text);
-  font-family: "Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 16.5px;
   line-height: 1.65;
 }
@@ -175,6 +191,28 @@ tt{
 .card-desc{
   margin-top: 6px;
   color: var(--muted);
+}
+
+
+
+/* Card theme overrides for the landing page */
+.card--light{
+  background: rgba(11,12,16,.02);
+  color: #0b0c10;
+}
+body.page-home.page-light .card--light .card-title{ color: #0b0c10; }
+body.page-home.page-light .card--light .card-desc{ color: rgba(11,12,16,.60); }
+
+.card--dark{
+  background: #0f1117;
+  border-color: rgba(255,255,255,.12);
+  color: #e8e9ee;
+}
+body.page-home.page-light .card--dark .card-title{ color: #e8e9ee; }
+body.page-home.page-light .card--dark .card-desc{ color: #a7adbb; }
+body.page-home.page-light .card--dark:hover{
+  background: rgba(15,17,23,.92);
+  border-color: rgba(255,255,255,.20);
 }
 
 /* -------- Lists -------- */
