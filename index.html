@@ -3,7 +3,7 @@
 <title>Jordi Weggemans</title>
 <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 </head>
-<body>
+<body class="page-home">
     <div id="main">
 
         <div class="topnav">
@@ -15,29 +15,51 @@
         <h1>Jordi Weggemans</h1>
         <hr />
 
-        <div id="profilepic">
-            <a href="Figures/ProfilePic.jpg" target="blank_">
-                <img src="Figures/ProfilePic.jpg" height="350px" />
-            </a>
+        <div class="landing">
+          <div class="landing-left">
+            <p>
+              I'm a researcher working on quantum computation and information.
+              I hold a PhD in quantum computation and information from the
+              <a href="https://www.uva.nl/en" target="_blank" rel="noopener">University of Amsterdam</a>
+              (graduated November 2025), and I did my PhD at the
+              <a href="https://www.cwi.nl/en/" target="_blank" rel="noopener">Centrum Wiskunde &amp; Informatica (CWI)</a>
+              and
+              <a href="https://qusoft.org" target="_blank" rel="noopener">QuSoft</a>.
+              My research focuses on when and how quantum resources can offer advantages over classical resources in computation, using tools from computational complexity.
+            </p>
+
+            <p>
+              Next to research, I write and produce music — mainly pop, neo-soul and cinematic music, with occasional genre experiments — and I’m available for collaborations and for writing/production work.
+            </p>
+
+            <div class="splitcards">
+              <a class="card card-research" href="research/">
+                <div class="card-title">Research</div>
+                <div class="card-desc">Papers, preprints, talks, teaching.</div>
+              </a>
+
+              <a class="card card-music" href="music/">
+                <div class="card-title">Music</div>
+                <div class="card-desc">Selected work, services, contact.</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="landing-right" id="profilepic">
+              <a href="Figures/ProfilePic.jpg" target="blank_">
+                  <img src="Figures/ProfilePic.jpg" height="350px" />
+              </a>
+          </div>
         </div>
 
-
-        <p>
-            I’m a PhD candidate at CWI (QuSoft) working on quantum complexity theory.
-            I also write and produce music as <strong>JRW Music</strong>.
-        </p>
-
-        <div class="splitcards">
-            <div class="card card-research">
-                <h2><a href="research/">Research</a></h2>
-                <p>Papers, preprints, talks, teaching.</p>
-</div>
-
-            <div class="card card-music">
-                <h2><a href="music/">Music</a></h2>
-                <p>Portfolio, links, services, contact.</p>
-</div>
+        <div class="lastupdate">
+          <a href="./">Last updated: <span id="lastupdated"></span></a>
         </div>
+        <script>
+          const d = new Date();
+          document.getElementById("lastupdated").textContent =
+            d.toLocaleDateString("en-GB", { timeZone: "Europe/Amsterdam" });
+        </script>
 
     </div>
 </body>

@@ -1,48 +1,48 @@
 <html>
 <head>
 <title>Jordi Weggemans — Research</title>
-<link rel = 'stylesheet' href='../stylesheet.css' type = 'text/css'/>
+<link rel="stylesheet" href="../stylesheet.css" type="text/css"/>
 </head>
-<body>
-    <div id='main'>
-        
+<body class="page-research">
+    <div id="main">
+
         <div class="topnav">
             <a href="../">Home</a>
             <a class="active" href="./">Research</a>
             <a href="../music/">Music</a>
         </div>
-<h1>Jordi Weggemans</h1>
+
+        <h1>Research</h1>
         <hr />
-        <div id='profilepic'>
-            <a href='../Figures/ProfilePic.jpg' target='blank_'><img src='../Figures/ProfilePic.jpg' height='350px' /></a>
-        </div>
-        <h2>About me</h2>
-
-        <p><em>[Temporary placeholder — replace this with whatever you want your “About me” section to say. For example: a 2–4 sentence summary of your research focus + a one-liner that you also produce music as JRW Music.]</em></p>
-<p>
-        I am a PhD candidate (started January 2021, expected to graduate 2025) at the <a href='https://www.cwi.nl/en/groups/algorithms-and-complexity/' target='blank_'>Algorithms & Complexity Group</a> of CWI (QuSoft), supervised by Harry Buhrman. Previously, I studied Applied Mathematics (Operations Research track) and Applied Physics (Materials Science track) at the University of Twente, and did a research internship at the University of Cambridge (<a href='https://www.robinson.msm.cam.ac.uk' target='blank_'>Quantum materials and devices group</a>).</p> 
-
-<p>I am predominantly interested in quantum complexity theory, but have also explored quantum query complexity, fault-tolerant benchmarking and quantum property testing. </p>
-
- <p> Next to research, I write and produce music. </p>
 
 
- <br />
-        <table>
-            <tr><td>Name:</td><td><a href='https://www.cwi.nl/en/people/jordi-weggemans' target='blank_'>Jordi Weggemans</a></td></tr>
-            <tr><td>Affiliation:</td><td><a href='https://qusoft.org' target='blank_'>QuSoft</a>, <a href='https://cwi.nl' target='blank_'>Centrum Wiskunde &amp; Informatica</a></td></tr>
-            <tr><td rowspan='4'>Work address:</td><td>L210, CWI</td></tr>
+        <h2>About</h2>
+        <p>
+          I currently work as an independent consultant on a research project related to quantum computation.
+          Previously, I was a PhD student at the
+          <a href="https://www.cwi.nl/en/" target="_blank" rel="noopener">Centrum Wiskunde &amp; Informatica (CWI)</a>
+          and
+          <a href="https://qusoft.org" target="_blank" rel="noopener">QuSoft</a>,
+          supervised by Harry Buhrman. I obtained my PhD degree from the
+          <a href="https://www.uva.nl/en" target="_blank" rel="noopener">University of Amsterdam</a>
+          in November 2025.
+        </p>
 
-            <tr><td>Science Park 123</td></tr>
-            <tr><td>1098 XG, Amsterdam</td></tr>
-            <tr><td>The Netherlands</td></tr>
-            <tr><td>Email:</td><td><tt>jrw at cwi  dot nl</tt></td></tr>
-</table>
-        <h2>Publications and preprints</h2>
+        <p>
+          I am primarily interested in when and how quantum resources can offer advantages over classical resources in computation, using tools from computational complexity.
+          During my PhD, I worked mostly on quantum complexity theory, but also explored quantum query complexity, fault-tolerant benchmarking and quantum property testing.
+        </p>
+
+        <p>
+          Email: <tt>jordi.weggemans [at] quantinuum [dot] com</tt>
+        </p>
+
+
+<h2>Publications and preprints</h2>
 Check also my <a href='https://scholar.google.nl/citations?user=DXZzVtwAAAAJ&hl=nl' target='blank_'>Google scholar profile</a>.
         <ul>
 <li>
-	<a href='https://arxiv.org/abs/2511.11008' target='blank_'> Unconditional and exponentially large violation of classicality </a> <br>
+	<a href='https://quantum-journal.org/papers/q-2025-04-18-1717/' target='blank_'> Unconditional and exponentially large violation of classicality </a> <br>
 	Marcello Benedetti, Gabriel Marin-Sanchez, Jordi Weggemans, Matthias Rosenkranz and Harry Buhrman <br>
       [<a href='https://arxiv.org/abs/2511.11008' target='blank_'>arXiv</a>]
     </li>
@@ -147,6 +147,16 @@ Role: teaching assistant (2022)
  </ul>
 
 Last update: 09-08-2024
+
+
+        <div class="lastupdate">
+          <a href="../">Last updated: <span id="lastupdated"></span></a>
+        </div>
+        <script>
+          const d = new Date();
+          document.getElementById("lastupdated").textContent =
+            d.toLocaleDateString("en-GB", { timeZone: "Europe/Amsterdam" });
+        </script>
 
 
     </div>

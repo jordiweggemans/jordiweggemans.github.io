@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>Jordi Weggemans — JRW Music</title>
+<title>Jordi Weggemans — Music (JRW Music)</title>
 <link rel="stylesheet" href="../stylesheet.css" type="text/css"/>
 </head>
-<body>
+<body class="page-music">
     <div id="main">
 
         <div class="topnav">
@@ -12,41 +12,61 @@
             <a class="active" href="./">Music</a>
         </div>
 
-        <h1>JRW Music</h1>
+        <h1>Music</h1>
         <hr />
 
         <h2>About</h2>
         <p>
-            I write and produce music (mainly pop and neo-soul, with occasional genre experiments).
-            I’m available for collaborations with singers and for writing/production work.
+          I write and produce music, focusing on pop, neo-soul and cinematic music, with occasional genre experiments.
+          I play guitar, bass and piano, and I care a lot about feel: I try to keep human performance as a cornerstone of every project.
         </p>
 
-        <h2>Listen</h2>
+        <h2>Socials</h2>
         <ul>
+            <li><a href="https://www.instagram.com/music.jrw/" target="blank_">Instagram</a></li>
             <li><a href="https://open.spotify.com/" target="blank_">Spotify</a></li>
-            <li><a href="https://soundcloud.com/" target="blank_">SoundCloud</a></li>
+            <li><a href="https://soundcloud.com/user-426248967-23320818" target="blank_">SoundCloud</a></li>
             <li><a href="https://www.youtube.com/" target="blank_">YouTube</a></li>
         </ul>
 
         <h2>Selected work</h2>
         <ul>
-            <li><strong>Track / Artist</strong> — role (writer/producer/guitar), year. [<a href="#" target="blank_">link</a>]</li>
-            <li><strong>Track / Artist</strong> — role, year. [<a href="#" target="blank_">link</a>]</li>
+            <li>
+              <a href="https://open.spotify.com/track/4HZUZVfaHlQthQzyKriFCz?si=789b09d737bb4f49" target="blank_">
+                When It Counts — Clara Ray
+              </a>
+              — composer, producer, mixing and mastering
+            </li>
+            <li>
+              <a href="https://open.spotify.com/track/3Maxn8YmnUJAiikWmDvl9D?si=2b09842d539e4a4d" target="blank_">
+                Nothing Stays — Clara Ray
+              </a>
+              — lyricist, co-composer, guitar and bass performer
+            </li>
         </ul>
 
         <h2>Services</h2>
         <ul>
-            <li>Songwriting (topline + lyrics)</li>
             <li>Production (full tracks)</li>
-            <li>Guitar / bass recording</li>
-            <li>Mix prep / demos</li>
+            <li>Songwriting (topline + lyrics)</li>
+            <li>Soundtracks (film, games, commercials and branded content)</li>
+            <li>Guitar / bass session work</li>
         </ul>
 
         <h2>Contact</h2>
         <p>
-            Email: <tt>jrw at cwi dot nl</tt><br/>
-            (If you prefer a music-specific email/links, add them here.)
+          For collaborations, writing/production work, or private demos, feel free to reach out.<br/>
+          Email: <tt>music.jrw [at] gmail [dot] com</tt>
         </p>
+
+        <div class="lastupdate">
+          <a href="../">Last updated: <span id="lastupdated"></span></a>
+        </div>
+        <script>
+          const d = new Date();
+          document.getElementById("lastupdated").textContent =
+            d.toLocaleDateString("en-GB", { timeZone: "Europe/Amsterdam" });
+        </script>
 
     </div>
 </body>
