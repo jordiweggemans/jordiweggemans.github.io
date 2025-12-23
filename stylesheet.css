@@ -229,9 +229,10 @@ li{ margin: 7px 0; }
 /* Selected work tiles */
 .workgrid{
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 220px));
   gap: 14px;
   margin-top: 10px;
+  justify-content: start;
 }
 
 .workitem{
@@ -281,7 +282,7 @@ li{ margin: 7px 0; }
 }
 
 .caption{
-  padding: 12px 14px 14px 14px;
+  padding: 10px 12px 12px 12px;
 }
 
 .caption .title{
