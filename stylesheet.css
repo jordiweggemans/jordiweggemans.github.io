@@ -1,18 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
 
+/* -------- Theme tokens -------- */
 :root{
   --bg: #07080c;
   --panel: #0f1117;
   --text: #e8e9ee;
   --muted: #a7adbb;
   --border: rgba(255,255,255,.12);
-  --accent: #b69cff; /* default/home */
+  --accent: #b69cff; /* home */
   --shadow: 0 14px 40px rgba(0,0,0,.45);
+
+  --card-bg: rgba(255,255,255,.02);
+  --card-bg-hover: rgba(255,255,255,.05);
+  --card-border-hover: rgba(255,255,255,.20);
 }
 
-body.page-research { --accent: #7aa2ff; }
-body.page-music    { --accent: #ff63d1; }
+/* Research = light mode */
+body.page-research{
+  --bg: #f5f6f8;
+  --panel: #ffffff;
+  --text: #0b0c10;
+  --muted: #4c5563;
+  --border: rgba(11,12,16,.14);
+  --accent: #2f5bff;
+  --shadow: 0 10px 30px rgba(0,0,0,.10);
 
+  --card-bg: rgba(11,12,16,.02);
+  --card-bg-hover: rgba(11,12,16,.05);
+  --card-border-hover: rgba(11,12,16,.18);
+}
+
+/* Music stays dark */
+body.page-music{
+  --accent: #ff63d1;
+}
+
+/* -------- Base -------- */
 *{ box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 
@@ -70,7 +93,7 @@ tt{
   font-size: 0.95em;
 }
 
-/* Nav */
+/* -------- Nav -------- */
 .topnav{
   display: flex;
   gap: 14px;
@@ -89,7 +112,7 @@ tt{
   text-decoration: none;
 }
 
-/* Landing layout */
+/* -------- Landing layout -------- */
 .landing{
   display: flex;
   gap: 22px;
@@ -110,9 +133,7 @@ tt{
   justify-content: flex-end;
 }
 
-#profilepic{
-  margin: 0;
-}
+#profilepic{ margin: 0; }
 
 #profilepic img{
   border-radius: 14px;
@@ -120,7 +141,7 @@ tt{
   display: block;
 }
 
-/* Cards */
+/* -------- Cards -------- */
 .splitcards{
   margin-top: auto;
   display: grid;
@@ -134,14 +155,14 @@ tt{
   padding: 14px 14px;
   border: 1px solid var(--border);
   border-radius: 14px;
-  background: rgba(255,255,255,.02);
+  background: var(--card-bg);
   transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
 }
 
 .card:hover{
   text-decoration: none;
-  background: rgba(255,255,255,.05);
-  border-color: rgba(255,255,255,.2);
+  background: var(--card-bg-hover);
+  border-color: var(--card-border-hover);
   transform: translateY(-1px);
 }
 
@@ -156,15 +177,11 @@ tt{
   color: var(--muted);
 }
 
-/* Lists */
-ul{
-  padding-left: 18px;
-}
-li{
-  margin: 7px 0;
-}
+/* -------- Lists -------- */
+ul{ padding-left: 18px; }
+li{ margin: 7px 0; }
 
-/* Footer last update */
+/* -------- Footer last update -------- */
 .lastupdate{
   margin-top: 30px;
   padding-top: 14px;
@@ -173,17 +190,20 @@ li{
   font-size: 14px;
   text-align: left;
 }
-.lastupdate a{
-  color: var(--muted);
-}
+.lastupdate a{ color: var(--muted); }
 .lastupdate a:hover{
   color: var(--text);
   text-decoration: none;
 }
 
-/* Mobile */
+/* -------- Mobile -------- */
 @media (max-width: 900px){
-  #main{ margin: 0; border-radius: 0; border-left: none; border-right: none; }
+  #main{
+    margin: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
   h1{ font-size: 36px; }
   .landing{ display: block; }
   .landing-right{ margin-top: 14px; justify-content: flex-start; }
