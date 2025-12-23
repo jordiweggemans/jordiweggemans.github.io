@@ -256,6 +256,17 @@ li{ margin: 7px 0; }
   border: 1px solid var(--border);
   display: block;
 }
+
+/* Music hero image: full-bleed inside the main panel (uses the main padding) */
+body.page-music .heroimg{
+  margin-left: -22px;
+  margin-right: -22px;
+}
+body.page-music .heroimg img{
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
 @media (max-width: 900px){
   .heroimg img{ height: 200px; }
 }
