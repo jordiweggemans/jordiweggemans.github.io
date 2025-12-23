@@ -225,6 +225,80 @@ li{ margin: 7px 0; }
   text-decoration: none;
 }
 
+
+/* Selected work tiles */
+.workgrid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.workitem{
+  position: relative;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--card-bg);
+  text-decoration: none;
+}
+
+.workitem img{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  transition: opacity 140ms ease;
+}
+
+.workitem .overlay{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 140ms ease;
+  background: rgba(0,0,0,.55);
+}
+
+.workitem:hover img{ opacity: 0.55; }
+.workitem:hover .overlay{ opacity: 1; }
+
+.listenicon{
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.45);
+  color: #fff;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1;
+  transform: translateX(2px); /* visually centres the triangle */
+}
+
+.caption{
+  padding: 12px 14px 14px 14px;
+}
+
+.caption .title{
+  color: var(--text);
+  font-weight: 600;
+}
+
+.caption .role{
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 900px){
+  .workgrid{ grid-template-columns: 1fr; }
+}
+
 /* -------- Mobile -------- */
 @media (max-width: 900px){
   #main{
