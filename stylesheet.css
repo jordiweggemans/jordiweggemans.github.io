@@ -9,6 +9,7 @@ h1 {
 
 #main {
   width: 1250px;
+  max-width: 100%;
   margin: auto;
   padding: 2px 20px 2px 20px;
   background-color: White;
@@ -41,4 +42,61 @@ a:visited {
 /* Optional: Change color on hover */
 a:hover {
   color: #27408B; /* Darker shade for hover effect */
+}
+
+/* --- NEW: simple nav --- */
+.topnav {
+  margin: 10px 0 10px 0;
+  padding: 8px 0 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.topnav a {
+  margin-right: 14px;
+}
+
+.topnav a.active {
+  font-weight: bold;
+}
+
+/* --- NEW: landing page cards --- */
+.splitcards {
+  margin-top: 25px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 360px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 14px 16px;
+  background: #fafafa;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card-research {
+  border-left: 5px solid #4169E1;
+}
+
+.card-music {
+  border-left: 5px solid #27408B;
+}
+
+.lastupdate {
+  margin-top: 18px;
+  font-size: 90%;
+  color: #444;
+}
+
+/* --- Small screens: avoid float collision --- */
+@media (max-width: 900px) {
+  #profilepic {
+    float: none;
+    margin: 10px 0 10px 0;
+  }
 }
