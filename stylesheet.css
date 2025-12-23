@@ -238,3 +238,24 @@ li{ margin: 7px 0; }
   .landing-right{ margin-top: 14px; justify-content: flex-start; }
   .splitcards{ grid-template-columns: 1fr; }
 }
+
+/* Hero image */
+.heroimg{
+  margin: 14px 0 6px 0;
+}
+.heroimg a{
+  display: block;
+  max-width: 760px; /* keeps it from feeling huge on wide screens */
+}
+.heroimg img{
+  width: 100%;
+  height: 240px;           /* banner height */
+  object-fit: cover;       /* crops wide images nicely */
+  object-position: center; /* centre the crop */
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  display: block;
+}
+@media (max-width: 900px){
+  .heroimg img{ height: 200px; }
+}
