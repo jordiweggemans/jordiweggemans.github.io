@@ -206,55 +206,6 @@ tt{
 
 
 
-/* Card theme overrides for the landing page */
-.card--light{
-  background: rgba(11,12,16,.02);
-  color: #0b0c10;
-}
-body.page-home.page-light .card--light .card-title{ color: #0b0c10; }
-body.page-home.page-light .card--light .card-desc{ color: rgba(11,12,16,.60); }
-
-.card--dark{
-  background: #0f1117;
-  border-color: rgba(255,255,255,.12);
-  color: #e8e9ee;
-}
-body.page-home.page-light .card--dark .card-title{ color: #e8e9ee; }
-body.page-home.page-light .card--dark .card-desc{ color: #a7adbb; }
-body.page-home.page-light .card--dark:hover{
-  background: rgba(15,17,23,.92);
-  border-color: rgba(255,255,255,.20);
-}
-
-
-
-/* Hero image */
-.heroimg{
-  margin: 14px 0 6px 0;
-}
-.heroimg img{
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  display: block;
-}
-body.page-music .heroimg img{
-  box-shadow: 0 10px 30px rgba(0,0,0,.10);
-}
-
-/* Subtle section panels */
-.panel{
-  margin-top: 18px;
-  padding: 14px 16px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: rgba(11,12,16,.03);
-}
-body.page-home .panel, body.page-research .panel{ background: rgba(11,12,16,.02); }
-body.page-music .panel{ background: rgba(11,12,16,.035); }
-
 /* -------- Lists -------- */
 ul{ padding-left: 18px; }
 li{ margin: 7px 0; }
