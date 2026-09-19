@@ -416,3 +416,35 @@ body.page-music .heroimg img{
     font-size: 11.5px;
   }
 }
+
+
+/* -------- Cinematic work -------- */
+.cinematic-work{
+  margin-top: 24px;
+}
+
+.cinematic-grid{
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.cinematic-track{
+  padding: 12px 14px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.cinematic-title{
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cinematic-track iframe{
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
