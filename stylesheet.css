@@ -459,3 +459,65 @@ body.page-music .heroimg img{
   }
 }
 
+
+
+/* -------- Polish pass -------- */
+
+/* Homepage: a little calmer and more editorial */
+.page-home .landing-left p{
+  max-width: 60ch;
+}
+
+.page-home .splitcards{
+  padding-top: 24px;
+}
+
+.page-home .card{
+  padding: 16px;
+}
+
+/* Research publications: clearer hierarchy */
+.page-research .publication{
+  margin: 0 0 18px 0;
+}
+
+.page-research .publication-title{
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.page-research .publication-meta{
+  color: var(--muted);
+  font-size: 0.94em;
+}
+
+/* Music: more breathing room, less visual crowding */
+.page-music .music-intro{
+  max-width: 660px;
+}
+
+.page-music .selected-work{
+  margin-top: 10px;
+}
+
+.page-music .workgrid{
+  margin-top: 16px;
+  gap: 16px;
+}
+
+.page-music .cinematic-work{
+  margin-top: 36px;
+}
+
+.page-music .cinematic-grid{
+  margin-top: 14px;
+  gap: 14px;
+}
+
+.page-music .music-info-grid{
+  margin-top: 34px;
+}
+
+.page-music .music-contact{
+  margin-top: 26px;
+}
