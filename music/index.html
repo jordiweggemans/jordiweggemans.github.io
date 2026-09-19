@@ -15,45 +15,37 @@
 <body class="page-music">
 <div id="main">
 
-        <div class="topnav">
-            <a href="../">Home</a>
-            <a href="../research/">Research</a>
-            <a class="active" href="./">Music</a>
-        </div>
+  <div class="topnav">
+    <a href="../">Home</a>
+    <a href="../research/">Research</a>
+    <a class="active" href="./">Music</a>
+  </div>
 
-        <h1>Music</h1>
-        <hr />
+  <h1>Music</h1>
+  <hr />
 
-        <div class="heroimg">
-          <a href="../Figures/MusicPicWide.jpg" target="blank_">
-            <img src="../Figures/MusicPicWide.jpg" alt="Music" />
-          </a>
-        </div>
+  <div class="heroimg">
+    <a href="../Figures/MusicPicWide.jpg" target="_blank" rel="noopener">
+      <img src="../Figures/MusicPicWide.jpg" alt="Music" />
+    </a>
+  </div>
 
+  <section class="music-intro">
+    <h2>About</h2>
+    <p>
+      I write and produce music, focusing on pop, neo-soul and cinematic music, with occasional genre experiments.
+      I play guitar, bass and piano, and I care a lot about feel: I try to keep human performance as a cornerstone of every project.
+    </p>
+    <p>
+      I also release instrumental guitar music under the artist name Athelnee.
+    </p>
+  </section>
 
-        <h2>About</h2>
-        <p>
-          I write and produce music, focusing on pop, neo-soul and cinematic music, with occasional genre experiments.
-          I play guitar, bass and piano, and I care a lot about feel: I try to keep human performance as a cornerstone of every project. <br/>
-	<br/>
+  <section class="selected-work">
+    <h2>Selected work</h2>
 
-	I also release instrumental guitar music under the artist name Athelnee.
-
-		
-        </p>
-
-        <h2>Socials</h2>
-        <ul>
-            <li><a href="https://www.instagram.com/music.jrw/" target="blank_">Instagram</a></li>
-<li><a href="https://soundcloud.com/user-426248967-23320818" target="blank_">SoundCloud</a></li>
-</ul>
-        <div class="panel">
-
-
-        <h2>Selected work</h2>
-
-        <div class="workgrid">
-          <a class="workitem" href="https://open.spotify.com/track/4HZUZVfaHlQthQzyKriFCz?si=789b09d737bb4f49" target="_blank" rel="noopener">
+    <div class="workgrid">
+<a class="workitem" href="https://open.spotify.com/track/4HZUZVfaHlQthQzyKriFCz?si=789b09d737bb4f49" target="_blank" rel="noopener">
             <img src="../Figures/WhenItCounts.png" alt="When It Counts — Clara Ray" />
             <div class="overlay" aria-hidden="true">
               <div class="listenicon" title="Listen">▶</div>
@@ -141,35 +133,47 @@
    	 <div class="role">Composer and performer, mixing and mastering</div>
   	</div>
 	</a>
-
-
-        </div>
-<h2>Services</h2>
-        <ul>
-            <li>Production (full tracks)</li>
-<li>Songwriting (topline + lyrics)</li>
-            <li>Soundtracks (film, games, commercials and branded content)</li>
-            <li>Guitar/bass session work</li>
-<li>Mixing and mastering</li>
-        </ul>
-        </div>
-
-
-        <h2>Contact</h2>
-        <p>
-          For collaborations, writing/production work, or private demos, feel free to reach out.<br/>
-          Email: <tt>music [dot] jrw [at] gmail [dot] com</tt>
-        </p>
-
-        <div class="lastupdate">
-          <a href="../">Last updated: <span id="lastupdated"></span></a>
-        </div>
-        <script>
-          const d = new Date();
-          document.getElementById("lastupdated").textContent =
-            d.toLocaleDateString("en-GB", { timeZone: "Europe/Amsterdam" });
-        </script>
-
     </div>
+  </section>
+
+  <div class="music-info-grid">
+    <section>
+      <h2>Socials</h2>
+      <ul class="cleanlist">
+        <li><a href="https://www.instagram.com/music.jrw/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://soundcloud.com/user-426248967-23320818" target="_blank" rel="noopener">SoundCloud</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Services</h2>
+      <ul class="cleanlist">
+        <li>Production (full tracks)</li>
+        <li>Songwriting (topline + lyrics)</li>
+        <li>Soundtracks (film, games, commercials and branded content)</li>
+        <li>Guitar/bass session work</li>
+        <li>Mixing and mastering</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="music-contact">
+    <h2>Contact</h2>
+    <p>
+      For collaborations, writing/production work, or private demos, feel free to reach out.<br/>
+      Email: <tt>music [dot] jrw [at] gmail [dot] com</tt>
+    </p>
+  </section>
+
+  <div class="lastupdate">
+    <a href="../">Last updated: <span id="lastupdated"></span></a>
+  </div>
+  <script>
+    const d = new Date();
+    document.getElementById("lastupdated").textContent =
+      d.toLocaleDateString("en-GB", { timeZone: "Europe/Amsterdam" });
+  </script>
+
+</div>
 </body>
 </html>
