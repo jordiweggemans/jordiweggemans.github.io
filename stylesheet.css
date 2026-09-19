@@ -371,19 +371,4 @@ body.page-music .heroimg img{
   background: rgba(11,12,16,.025);
 }
 
-.thesis p{
-  margin: 0;
-}
 
-.thesis strong{
-  font-size: 1.05em;
-  font-weight: 600;
-}
-
-.thesis a{
-  text-decoration: none;
-}
-
-.thesis a:hover{
-  text-decoration: underline;
-}
