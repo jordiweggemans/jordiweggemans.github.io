@@ -309,40 +309,6 @@ body.page-music .heroimg img{
   transition: filter 160ms ease, opacity 160ms ease;
 }
 
-.workitem .overlay{
-  position: absolute;
-  inset: 0 0 auto 0;
-  aspect-ratio: 1 / 1;
-  display: grid;
-  place-items: center;
-  opacity: 0;
-  background: rgba(14,12,18,.28);
-  transition: opacity 160ms ease;
-  pointer-events: none;
-}
-
-.workitem:hover .overlay{
-  opacity: 1;
-}
-
-.workitem:hover img{
-  filter: brightness(.72);
-}
-
-.listenicon{
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(255,255,255,.72);
-  border-radius: 50%;
-  color: #fff;
-  font-size: 17px;
-  line-height: 1;
-  padding-left: 2px;
-  backdrop-filter: blur(3px);
-}
-
 .caption{
   padding: 10px 11px 12px;
 }
@@ -520,4 +486,61 @@ body.page-music .heroimg img{
 
 .page-music .music-contact{
   margin-top: 26px;
+}
+
+
+/* -------- Spotify preview controls -------- */
+.workentry{
+  min-width: 0;
+}
+
+.workentry .workitem{
+  display: block;
+}
+
+.workentry .workitem:hover img{
+  filter: brightness(.94);
+}
+
+.preview-toggle{
+  width: 100%;
+  margin-top: 7px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+  transition: background 140ms ease, border-color 140ms ease;
+}
+
+.preview-toggle:hover{
+  background: var(--card-bg-hover);
+  border-color: var(--card-border-hover);
+}
+
+.preview-icon{
+  font-size: 11px;
+  line-height: 1;
+}
+
+.spotify-preview{
+  margin-top: 8px;
+}
+
+.spotify-preview iframe{
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
+.spotify-preview[hidden]{
+  display: none;
 }
